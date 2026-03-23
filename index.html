@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio | Paulo César</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts.js"></script>
+</head>
+
+<body>
+    
+    
+    <header>
+        <ul> <!--  Tag para criar lista -->
+            <li> <!--  Tag para os itens da lista -->
+                <a>Home</a>
+            </li>
+
+            <li>
+                <a>Projetos</a>
+
+            </li>
+
+            <li>
+                <a>Sobre</a>
+
+            </li>
+
+            <li>
+                <a>Contato</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="principal">
+<video class="video-fundo" autoplay muted loop src="./assets/video-fundo.mp4"></video>
+        
+        <div>
+            <h1>Olá, eu sou <span>Paulo César</span></h1>
+            <p>Desenvolvedor Front-end</p>
+            <a class="botao">Ver Projetos</a>
+            
+    
+    </section>
+    <section class="rodape-header">
+
+    </section>
+
+    <section class="sessao">
+        <h2 class="titulo-sessao">Projetos</h2>
+        <div class="grade-projetos">
+            <div class="card-projeto">
+                <img class="imagem-projeto" src="./assets/projeto-comanda-digital.png">
+                <div class="card-info-projeto">
+                    <h3>Comanda Digital</h3>
+                    <p>Gestão inteligente de pedidos e mesas em tempo real. Desenvolvido com HTML, CSS e JavaScript.</p>
+                    <a class="ver-projetos" data-projeto="1">Ver projetos ↠</a>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <img class="imagem-projeto" src="./assets/projeto-advogado.png">
+                <div class="card-info-projeto">
+                    <h3>Projeto Advogado</h3>
+                    <p>Um projeto feito com HTML e CSS, feito para um escritório de advocacia.</p>
+                    <a class="ver-projetos" data-projeto="2">Ver projetos ↠</a>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <img class="imagem-projeto" src="./assets/projeto-criativo.png">
+                <div class="card-info-projeto">
+                    <h3>Projeto Criativo</h3>
+                    <p>Projeto feito com HTML, CSS e JavaScript, focado em design inovador e interatividade.</p>
+                    <a class="ver-projetos" data-projeto="3">Ver projetos ↠</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sessao">
+        <h2 class="titulo-sessao">Sobre Mim</h2>
+
+        <div class="sobre">
+            <img class="foto-perfil" src="./assets/foto-perfil.png">
+            <div class="conteudo-sobre">
+                <h2>Desenvolvedor Front-end</h2>
+                <p>Sou um desenvolvedor front-end apaixonado por criar experiências digitais envolventes e funcionais.
+                    Com habilidades em HTML, CSS e JavaScript, estou sempre buscando aprender novas tecnologias e
+                    aprimorar minhas habilidades para entregar projetos de alta qualidade. Meu objetivo é transformar
+                    ideias em realidade através do código, criando interfaces intuitivas e responsivas que encantem os
+                    usuários.</p>
+
+                <p>Além disso, sou um entusiasta de design e acredito que a estética é tão importante quanto a
+                    funcionalidade. Estou sempre atento às tendências de design e busco incorporar elementos visuais
+                    modernos em meus projetos para garantir uma experiência agradável aos usuários.</p>
+
+                <div class="habilidades">
+                    <span>HTML5</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sessao">
+        <h2 class="titulo-sessao">Contato</h2>
+
+        <div class="botoes-acesso">
+            <a href="https://w.app/cn1ybg" class="botoes-contato whatsapp">
+                <!-- Imagem do ícone do WhatsApp -->
+                <span>Whatsapp</span>
+            </a>
+            <a href="mailto:paulocesarbasto11@gmail.com" class="botoes-contato email">
+                <!-- Imagem do ícone do Email -->
+                <span>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/paulo-c%C3%A9sar-46abba2b8/" class="botoes-contato linkedin">
+                <!-- Imagem do ícone do LinkedIn -->
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/PauloCesar-creator" class="botoes-contato github">
+                <!-- Imagem do ícone do GitHub -->
+                <span>GitHub</span>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Paulo César. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="cursor">
+
+    </div>
+
+   
+    
+
+
+</body>
+<script>
+    const cursor = document.querySelector(".cursor")
+    document.addEventListener("mousemove", function (info) {
+        cursor.style.left = info.clientX + "px"
+        cursor.style.top = info.clientY + "px"
+    })
+</script>
+<script src="scripts.js"></script>
+
+</html>
