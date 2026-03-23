@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Paulo César</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        :focus { outline: 3px solid Highlight; outline-offset: 2px; }
+    </style>
     <script src="./scripts.js"></script>
 </head>
 
@@ -15,32 +19,32 @@
     <header>
         <ul> <!--  Tag para criar lista -->
             <li> <!--  Tag para os itens da lista -->
-                <a>Home</a>
+                <a id="home" href="#home-section">Home</a>
             </li>
 
             <li>
-                <a>Projetos</a>
-
-            </li>
-
-            <li>
-                <a>Sobre</a>
+                <a id="projetos" href="#projetos-section">Projetos</a>
 
             </li>
 
             <li>
-                <a>Contato</a>
+                <a id="sobre" href="#sobre-section">Sobre</a>
+
+            </li>
+
+            <li>
+                <a id="contato" href="#contato-section">Contato</a>
             </li>
         </ul>
     </header>
 
-    <section class="principal">
+    <section id="home-section" class="principal" tabindex="-1">
 <video class="video-fundo" autoplay muted loop src="./assets/video-fundo.mp4"></video>
         
         <div>
             <h1>Olá, eu sou <span>Paulo César</span></h1>
             <p>Desenvolvedor Front-end</p>
-            <a class="botao">Ver Projetos</a>
+            <a href="#projetos-section" class="botao">Ver Projetos</a>
             
     
     </section>
@@ -48,7 +52,7 @@
 
     </section>
 
-    <section class="sessao">
+    <section id="projetos-section" class="sessao" tabindex="-1">
         <h2 class="titulo-sessao">Projetos</h2>
         <div class="grade-projetos">
             <div class="card-projeto">
@@ -65,7 +69,7 @@
                 <div class="card-info-projeto">
                     <h3>Projeto Advogado</h3>
                     <p>Um projeto feito com HTML e CSS, feito para um escritório de advocacia.</p>
-                    <a class="ver-projetos" data-projeto="2">Ver projetos ↠</a>
+                    <a class="ver-projetos" data-projeto="2" href="https://site-advocacia-umber.vercel.app/">Ver projetos ↠</a>
                 </div>
             </div>
 
@@ -74,14 +78,15 @@
                 <div class="card-info-projeto">
                     <h3>Projeto Criativo</h3>
                     <p>Projeto feito com HTML, CSS e JavaScript, focado em design inovador e interatividade.</p>
-                    <a class="ver-projetos" data-projeto="3">Ver projetos ↠</a>
+                    <a class="ver-projetos" data-projeto="3" href="
+                    https://site-criativo-bice.vercel.app/">Ver projetos ↠</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="sessao">
+    <section id="sobre-section" class="sessao" tabindex="-1">
         <h2 class="titulo-sessao">Sobre Mim</h2>
 
         <div class="sobre">
@@ -108,7 +113,7 @@
         </div>
     </section>
 
-    <section class="sessao">
+    <section id="contato-section" class="sessao" tabindex="-1">
         <h2 class="titulo-sessao">Contato</h2>
 
         <div class="botoes-acesso">

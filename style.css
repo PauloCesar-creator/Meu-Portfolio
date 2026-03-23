@@ -216,18 +216,23 @@ ul {
     display: flex;
     gap: 50px;
     list-style: none;
+    
 }
 li {
     cursor: pointer;
     font-weight: 500;
     font-size: 20px;
-    border-bottom: 4px solid #4d7cfe ;
+    border-bottom: 3px solid #4d7cfe ;
     border-radius: 5px;
 }
 li:hover {
     background-color: #4d7cfe;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
+}
+a {
+    color: #bbb;
+    text-decoration: none;
 }
 
 .video-fundo {
@@ -739,12 +744,15 @@ footer {
         flex-direction: row;
         align-items: stretch;
         width: 100%;
+        text-decoration: none;
     }
     li {
         font-size: 16px;
         padding: 10px 12px;
         border-bottom: 3px solid #4d7cfe;
         border-radius: 8px;
+        
+        
     }
 
     /* Principal */
