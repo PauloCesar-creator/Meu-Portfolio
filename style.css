@@ -79,6 +79,7 @@ body {
 }
 
 .sessao-visible {
+    border-radius: 50px;
     opacity: 1;
     transform: translateY(0);
     transition: opacity 420ms cubic-bezier(.22,.9,.3,1), transform 420ms cubic-bezier(.22,.9,.3,1);
@@ -235,36 +236,7 @@ a {
     text-decoration: none;
 }
 
-.video-fundo {
 
-    position: absolute;
-    /* Tira o vídeo do fluxo e fixa ele no container pai */
-    top: 50%;
-    /* Centraliza verticalmente o ponto de âncora */
-    left: 50%;
-    /* Centraliza horizontalmente o ponto de âncora */
-    transform: translate(-50%, -50%);
-    /* Move o vídeo de volta metade de sua largura/altura para centralizar perfeitamente */
-
-    min-width: 100%;
-    /* Garante que o vídeo sempre cubra a largura total do container */
-    min-height: 100%;
-    /* Garante que o vídeo sempre cubra a altura total do container */
-    width: auto;
-    /* Mantém a proporção do vídeo */
-    height: auto;
-    /* Mantém a proporção do vídeo */
-
-    object-fit: cover;
-    /* ESSENCIAL: Faz o vídeo preencher o espaço como um background-size: cover, cortando se necessário */
-
-    /* ADICIONE ESTA LINHA FUNDAMENTAL */
-    z-index: -2;
-    /* Coloca o vídeo atrás de elementos com z-index maior (como o texto) */
-
-    pointer-events: none;
-    /* Opcional: Impede que o vídeo receba cliques (bom para fundos) */
-}
 
 
 .principal {
@@ -272,7 +244,7 @@ a {
     overflow: hidden;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #222;
+    
     border-radius: 30px;
     min-height: 80vh;
     
